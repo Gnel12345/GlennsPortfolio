@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 const Portfolio = function() {
 	function makeWords() {
 		var words = [
@@ -54,7 +61,7 @@ const Portfolio = function() {
 	function typeAnimation() {
 		Typed.new("#writing-text", {
 			strings: [
-				"am a Full-Stack Web Developer.", "I love coding", "Every day I continue to learn new skills","Below is a list of growing projects that I've made","If you like what you see then hire me and let's get your company to excel"
+				"am a Web Developer.", "I love coding", "Every day I continue to learn new skills","Below is a list of growing projects that I've made","If you like what you see then hire me and let's get your website up and running"
 			],
 			// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 			stringsElement: null,

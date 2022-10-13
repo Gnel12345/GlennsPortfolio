@@ -22,6 +22,9 @@
 	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
 	<link rel="stylesheet" href="assets/styles/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link namr="stylesheet" href="assets/scripts/background.js"/>
+
+
 </head>
 
 <body>
@@ -31,249 +34,340 @@
 
 	<!-- Watch how to deploy it live -->
 	<!-- https://youtu.be/E1dqffpUlMA -->
-	<div class="wrapper">
+	<div class id="container">
+		<canvas id="mycanvas"></canvas>
+		<div class="wrapper">
+
+
+			<section id="about">
+
+
+				<div class="row">
+					<div class="small-12 large-8 large-offset-2 columns text-center">
+						<div class="profile-photo" style="background-image: url(assets/images/profile1.jpg);">
+						</div>
+						<div class="details">
+							<h2>Hi, I'm Glenn. I...<br> <span id="writing-text"><span></h2>
+						</div>
+					</div>
+				</div>
+			
+
+
+				<div class="row">
+					<div class="small-12 column">
+						<div class="cta text-center">
+							<h1 class="phone">Phone: 1-262-818-6028</h1>
+							<a class="my-button cta-button expand form-button" href="mailto:gnel12.gn@gmail.com">Get In
+								Touch</a>
+						</div>
+					</div>
+					<div class="small-12 column">
+						<div class="my-arrow-div text-center">
+							<a href="https://github.com/Gnel12345"><i class="fa fa-github-alt fa-2x"></i></a>
+
 		
-
-		<section id="about">
-			<div class="row">
-				<div class="small-12 large-8 large-offset-2 columns text-center">
-					<div class="profile-photo" style="background-image: url(assets/images/profile1.jpg);">
-					</div>
-					<div class="details">
-						<h2>Hi, I'm Glenn. I...<br> <span id="writing-text"><span></h2>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 column">
-					<div class="cta text-center">
-						<a class="my-button cta-button expand form-button" href="mailto:gnel12.gn@gmail.com">Get In Touch</a>
-					</div>
-				</div>
-				<div class="small-12 column">
-					<div class="my-arrow-div text-center">
-						<a href="https://github.com/Gnel12345"><i class="fa fa-github-alt fa-2x"></i></a>
-						
-					</div>
-				</div>
-			</div>
-
-		</section>
-
-
-		<section id="experience">
-
-			<div class="row column">
-				<div class="small-12">
-					<h2 class="text-center">My Experience</h2>
-					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-laptop"></i>
-					<h3>Front-end</h3>
-					<ul>
-						<li>html(5)</li>
-						<li>css(3)</li>
-						<li>Javascript</li>
-						<li>Jquery</li>
-						<li>Bootstrap</li>						
-						<li>Api</li>
-					</ul>
-				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-database"></i>
-					<h3>Back-end</h3>
-					<ul>
-						<li>NodeJS</li>
-						<li>NPM</li>
-						<li>Express</li>
-						<li>SQL</li>
-						<li>Mongo</li>
-						<li>Restful Web Services</li>
-						<li>Python</li>
-					</ul>
-				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-star"></i>
-					<h3>Tools</h3>
-					<ul>
-						
-						<li>Github</li>
-						
-					</ul>
-				</div>
-			</div>
-
-		</section>
-
-		<section id="work">
-			<h2 class="text-center">Work</h2>
-			<div class="row">
-				<p class="text-center tag-line">Here are few of my projects.</p>
-			</div>
-
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/linkedIn clone pic.JPG" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>Disney Plus Clone</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>NOTE : In progress.  Using ReactJS, Redux and Firebase I'm creating a social media clone that looks like Linked In</p>
-						<a class="my-button" target="_blank" href="https://glenns-linkedin-clone.herokuapp.com/">Visit Website</a>
-					</div>
-				</div>
-			</div>
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 columns">
-					<img src="assets/images/clock.JPG" alt="">
-				</div>
-			<div class="small-12 medium-5 medium-offset-1 columns">
-				<div class="details details-ftm">
-					<h3>Clock App</h3>
-					<p class="platform">Web</p>
-					<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-					<p>Using ReactJS and a weather API I created a website that shows the current time and the background picture 
-						changes based on time of day and weather conditions.</p>
-					<a class="my-button" target="_blank" href="http://timeweatherapp.herokuapp.com/">Visit Website</a>
-				</div>
-			</div>
-			</div>
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/ReactRecipePicture.JPG" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>React Recipe App</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Using ReactJS I created a recipe app.</p>
-						<a class="my-button" target="_blank" href="https://reactrecipeappp.netlify.app/">Visit Website</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 columns">
-					<img src="assets/images/RockPaperScissorsPicture.JPG" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-offset-1 columns">
-					<div class="details details-ftm">
-						<h3>Rock Paper Scissors Game</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>I created a Rock Paper Scissors Game using HTML, CSS and Javascript and deployed it on Netlify.</p>
-						<a class="my-button" target="_blank" href="https://glennsrockpapergame.netlify.app/">Visit Website</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/BeatBoxPic.JPG" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>BeatBox</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Using HTML, CSS and Javascript I created a BeatBox platform where when you press keys on keyboard it plays music and the buttons light up.</p>
-						<a class="my-button" target="_blank" href="https://glennsbeatbox.netlify.app/">Visit Website</a>
-					</div>
-				</div>
-			</div>
-			<div class="row work-row"> <!-- even -->
-				<div class="small-12 medium-6  columns">
-					<img src="assets/images/SunnySidePicture.JPG" alt="">
-				</div>
-				<div class="small-12 medium-5  medium-offset-1 columns">
-					<div class="details details-ftm">
-						<h3>SunnySide</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Using HTML and CSS, I created a Marketing Agency website.</p>
-						<a class="my-button" target="_blank" href="https://sunnysidesss.netlify.app/">Visit Website</a>
-					</div>
-				</div>
-			</div>
-
 			
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/FillInTheBlanksPicture.JPG" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7  columns">
-					<div class="details details-ftm">
-						<h3>Fill in the blanks Game</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Using HTML, CSS and Javascript I created a game where you Follow the prompts to enter a noun,adjective,verb etc. and it will fill in the blanks of sentences.</p>
-						<a class="my-button" target="_blank" href="https://fill-in-the-blanks.netlify.app/">Visit Website</a>
+
+			</section>
+
+
+
+
+
+
+
+
+
+			<section id="experience">
+
+				<div class="row column">
+					<div class="small-12">
+						<h2 class="text-center">My Experience</h2>
+						<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
 					</div>
 				</div>
-			</div>
-			
+				<div class="row">
+					<div class="small-12 medium-4 columns text-center experience-topics">
+						<i class="fi-laptop"></i>
+						<h3>Front-end</h3>
+						<ul>
+							<li>ReactJS</li>
+							<li>Redux</li>
+							<li>html(5)</li>
+							<li>css(3)</li>
+							<li>Javascript</li>
+							<li>Jquery</li>
+							<li>Bootstrap</li>
+							<li>Api</li>
+						</ul>
+					</div>
+					<div class="small-12 medium-4 columns text-center experience-topics">
+						<i class="fi-database"></i>
+						<h3>Back-end</h3>
+						<ul>
+							<li>NodeJS</li>
+							<li>NPM</li>
+							<li>Express</li>
+							<li>SQL</li>
+							<li>Mongo</li>
+							<li>Restful Web Services</li>
+							<li>Python</li>
+						</ul>
+					</div>
+					<div class="small-12 medium-4 columns text-center experience-topics">
+						<i class="fi-star"></i>
+						<h3>Tools</h3>
+						<ul>
+
+							<li>Github</li>
+
+						</ul>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="work">
+				<h2 class="text-center">Work</h2>
+				<div class="row">
+					<p class="text-center tag-line">Here are few of my projects.</p>
+				</div>
+				<div class="row work-row">
+					<!-- odd -->
+					
+						<div class="small-12 medium-6 columns">
+							<img src="assets/images/Amazon-clone.JPG" alt="">
+						</div>
+						<div class="small-12 medium-5 medium-offset-1 columns">
+							<div class="details details-ftm">
+								<h3>Amazon Clone</h3>
+								<p class="platform">Web</p>
+								<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+										class="fi-mobile"></i></p>
+								<p> Using ReactJS, Redux ,Firebase and stripe for test payments I've created a ecommerce website clone that looks like
+									Amazon</p>
+								<a class="my-button" target="_blank"
+									href="https://glenns-amazon-clone.herokuapp.com/">Visit Website</a>
+							</div>
+						</div>
+					</div>
 				
-				
-			
+						
 
 
-
-
-
-
-
-
-
-
-		</section>
-
-		<section id="teaching">
-			<h2 class="text-center">Experience</h2>
-			<div class="row">
-				<div class="small-12 medium-8 medium-offset-2">
-					<p class="text-center tag-line">Below is a list of the programming languages that I have experience with...</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 medium-8 medium-offset-2 columns">
-					<div class="teaching-domains">
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/netflix-pic.JPG" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>Netflix Clone</h3>
+							<p class="platform">Web</p>
+							<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+									class="fi-mobile"></i></p>
+							<p> Using ReactJS, Redux and the moviedb API I've created a streaming clone that looks like Netflix</p>
+							<a class="my-button" target="_blank"
+								href="https://glenns-netflix-clone.herokuapp.com/">Visit Website</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section id="footer-cta">
-			<h2 class="text-center">Wanna work with me?</h2>
-			<p></p>
-			<div class="row text-center">
-				<div class="small-12 medium-8 medium-offset-2 columns">
-					<p class="text-center">I'm currently available for work.</p>
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/linkedIn clone pic.JPG" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>LinkedIn Clone</h3>
+							<p class="platform">Web</p>
+							<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+									class="fi-mobile"></i></p>
+							<p> Using ReactJS, Redux and Firebase I've created a social media clone that looks like
+								Linked In</p>
+							<a class="my-button" target="_blank"
+								href="https://glenns-linkedin-clone.herokuapp.com/">Visit Website</a>
+						</div>
+					</div>
 				</div>
-				<div class="small-12 columns" id="startButtonDiv">
-					<a class="my-button form-button" href="mailto:gnel12.gn@gmail.com">Start Now</a>
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/clock.JPG" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>Clock App</h3>
+							<p class="platform">Web</p>
+							<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+									class="fi-mobile"></i></p>
+							<p>Using ReactJS and a weather API I created a website that shows the current time and the
+								background picture
+								changes based on time of day and weather conditions.</p>
+							<a class="my-button" target="_blank" href="http://timeweatherapp.herokuapp.com/">Visit
+								Website</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</section>
-
-		<footer id="footer">
-			<div class="row text-center">
-				<div class="small-12 medium-6 medium-offset-3 columns">
-					<p id="logo">GN</p>
-					<p id="copyright">Copyright &copy; 2021 | Glenn Nelson</p>
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/ReactRecipePicture.JPG" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>React Recipe App</h3>
+							<p class="platform">Web</p>
+							<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+									class="fi-mobile"></i></p>
+							<p>Using ReactJS I created a recipe app.</p>
+							<a class="my-button" target="_blank" href="https://reactrecipeappp.netlify.app/">Visit
+								Website</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</footer>
+
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/RockPaperScissorsPicture.JPG" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7 columns">
+						<div class="details details-ftm">
+							<h3>Rock Paper Scissors Game</h3>
+							<p class="platform">Web</p>
+							<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+									class="fi-mobile"></i></p>
+							<p>I created a Rock Paper Scissors Game using HTML, CSS and Javascript and deployed it on
+								Netlify.</p>
+							<a class="my-button" target="_blank" href="https://glennsrockpapergame.netlify.app/">Visit
+								Website</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/BeatBoxPic.JPG" alt="">
+					</div>
+					<div class="small-12 medium-5  medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>BeatBox</h3>
+							<p class="platform">Web</p>
+							<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+									class="fi-mobile"></i></p>
+							<p>Using HTML, CSS and Javascript I created a BeatBox platform where when you press keys on
+								keyboard it plays music and the buttons light up.</p>
+							<a class="my-button" target="_blank" href="https://glennsbeatbox.netlify.app/">Visit
+								Website</a>
+						</div>
+					</div>
+				</div>
+				<div class="row work-row">
+					<!-- even -->
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<img src="assets/images/SunnySidePicture.JPG" alt="">
+					</div>
+					<div class="small-12 medium-5 medium-pull-7  columns">
+						<div class="details details-ftm">
+							<h3>SunnySide</h3>
+							<p class="platform">Web</p>
+							<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+									class="fi-mobile"></i></p>
+							<p>Using HTML and CSS, I created a Marketing Agency website.</p>
+							<a class="my-button" target="_blank" href="https://sunnysidesss.netlify.app/">Visit
+								Website</a>
+						</div>
+					</div>
+				</div>
 
 
+				<div class="row work-row">
+					<!-- odd -->
+					<div class="small-12 medium-6 columns">
+						<img src="assets/images/FillInTheBlanksPicture.JPG" alt="">
+					</div>
+					<div class="small-12 medium-5  medium-offset-1 columns">
+						<div class="details details-ftm">
+							<h3>Fill in the blanks Game</h3>
+							<p class="platform">Web</p>
+							<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i
+									class="fi-mobile"></i></p>
+							<p>Using HTML, CSS and Javascript I created a game where you Follow the prompts to enter a
+								noun,adjective,verb etc. and it will fill in the blanks of sentences.</p>
+							<a class="my-button" target="_blank" href="https://fill-in-the-blanks.netlify.app/">Visit
+								Website</a>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</section>
+
+			<section id="teaching">
+				<h2 class="text-center">Experience</h2>
+				<div class="row">
+					<div class="small-12 medium-8 medium-offset-2">
+						<p class="text-center tag-line">Below is a list of the programming languages that I have
+							experience with...</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 medium-8 medium-offset-2 columns">
+						<div class="teaching-domains">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="footer-cta">
+				<h2 class="text-center">Wanna work with me?</h2>
+				<p></p>
+				<div class="row text-center">
+					<div class="small-12 medium-8 medium-offset-2 columns">
+						<p class="text-center">I'm currently available for work.</p>
+					</div>
+					<div class="small-12 columns" id="startButtonDiv">
+						<a class="my-button form-button" href="mailto:gnel12.gn@gmail.com">Start Now</a>
+					</div>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<div class="row text-center">
+					<div class="small-12 medium-6 medium-offset-3 columns">
+						<p id="logo">GN</p>
+						<p id="copyright">Copyright &copy; 2021 | Glenn Nelson</p>
+					</div>
+				</div>
+			</footer>
+
+
+
+		</div>
 
 	</div>
+	<script type="module" src="/assets/scripts/background.js"></script>
 	<script src="assets/scripts/app.js" charset="utf-8"></script>
+
+
 </body>
 
 </html>
